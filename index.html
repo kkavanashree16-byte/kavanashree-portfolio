@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavanashree K | AI Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary1:#6a11cb;
+  --primary2:#2575fc;
+  --dark:#0f0f1a;
+  --glass:rgba(255,255,255,0.05);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:var(--dark);
+  color:white;
+  overflow-x:hidden;
+  scroll-behavior:smooth;
+}
+
+/* Background Canvas */
+#bg{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  width:100%;
+  padding:20px 8%;
+  background:linear-gradient(90deg,var(--primary1),var(--primary2));
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+  box-shadow:0 5px 25px rgba(0,0,0,0.5);
+}
+
+header h2{
+  font-weight:600;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:30px;
+}
+
+nav a{
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding-top:80px;
+}
+
+.hero h1{
+  font-size:55px;
+  font-weight:700;
+}
+
+.hero span{
+  background:linear-gradient(45deg,var(--primary1),var(--primary2));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+  margin-top:15px;
+  max-width:700px;
+  opacity:0.8;
+}
+
+.btn{
+  margin-top:25px;
+  padding:12px 30px;
+  border-radius:25px;
+  background:linear-gradient(45deg,var(--primary1),var(--primary2));
+  text-decoration:none;
+  color:white;
+  display:inline-block;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.08);
+}
+
+/* SECTION */
+.section{
+  padding:120px 10%;
+  text-align:center;
+}
+
+.section h2{
+  font-size:36px;
+  margin-bottom:50px;
+}
+
+/* CARD */
+.card{
+  background:var(--glass);
+  backdrop-filter:blur(15px);
+  border-radius:20px;
+  padding:40px;
+  margin:30px auto;
+  width:80%;
+  border:1px solid rgba(255,255,255,0.08);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 50px rgba(106,17,203,0.4);
+}
+
+/* SKILLS */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+}
+
+.skill{
+  padding:20px;
+  background:var(--glass);
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.skill:hover{
+  background:linear-gradient(45deg,var(--primary1),var(--primary2));
+  transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+  padding:40px;
+  text-align:center;
+  background:linear-gradient(90deg,var(--primary2),var(--primary1));
+  margin-top:100px;
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<header>
+  <h2>Kavanashree K</h2>
+  <nav>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#internship">Internship</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Hi, I'm <span>Kavanashree</span></h1>
+  <p>AI Engineer | Python Developer | Computer Science & Design Engineering Student passionate about building intelligent and scalable AI-driven solutions.</p>
+  <a href="resume.pdf" class="btn" download>Download Resume</a>
+</section>
+
+<section id="internship" class="section">
+  <h2>Internship</h2>
+  <div class="card">
+    <h3>AI Engineer Intern – WIZZY BOX Pvt Ltd</h3>
+    <p>Jan 2026 – Present</p>
+    <p>
+      ✔ Developed ML models using Python  
+      ✔ Performed data preprocessing & feature engineering  
+      ✔ Built AI solutions integrating NLP & automation  
+      ✔ Collaborated to deploy optimized AI systems  
+    </p>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Automatic Fruits & Vegetable Ripeness Detection</h3>
+    <p>AI-based CNN model achieving ~91% accuracy using TensorFlow & OpenCV.</p>
+  </div>
+
+  <div class="card">
+    <h3>Password Strength Analyzer</h3>
+    <p>ML-based NLP model evaluating password strength with real-time Streamlit UI.</p>
+  </div>
+
+  <div class="card">
+    <h3>Home Price Predictor</h3>
+    <p>Regression-based ML model deployed via Streamlit for real-time prediction.</p>
+  </div>
+
+</section>
+
+<section id="skills" class="section">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="skill">Python</div>
+    <div class="skill">Java</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">SQL</div>
+    <div class="skill">TensorFlow</div>
+    <div class="skill">Scikit-learn</div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Kavanashree K | AI Engineer Portfolio
+</footer>
+
+<script>
+/* Animated Background */
+const canvas=document.getElementById("bg");
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let particles=[];
+
+for(let i=0;i<50;i++){
+  particles.push({
+    x:Math.random()*canvas.width,
+    y:Math.random()*canvas.height,
+    r:Math.random()*4+1,
+    dx:(Math.random()-0.5)*0.5,
+    dy:(Math.random()-0.5)*0.5
+  });
+}
+
+function animate(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  particles.forEach(p=>{
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle="rgba(106,17,203,0.8)";
+    ctx.fill();
+    p.x+=p.dx;
+    p.y+=p.dy;
+    if(p.x<0||p.x>canvas.width) p.dx*=-1;
+    if(p.y<0||p.y>canvas.height) p.dy*=-1;
+  });
+  requestAnimationFrame(animate);
+}
+animate();
+</script>
+
+</body>
+</html>
